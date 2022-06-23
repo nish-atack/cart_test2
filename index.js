@@ -19,7 +19,7 @@ $(function () {
         
         
         //var msg = `${key}\n朝礼/終礼不参加の理由：${reasons}\n返信期限：${date}\n使用ツール：${tool}`;
-    var msg = `ご注文内容：\n${breed} \n${num1} \n${Total} \n${reasons}`;
+    var msg = `ご注文内容：\n${breed} \n${num1} \n${time1} \n${reasons}`;
         sendText(msg);
 
         return false;
