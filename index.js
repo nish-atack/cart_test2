@@ -5,7 +5,7 @@ $(function () {
     // 送信
     $('form').submit(function () {
         var reasons = $('textarea[name="reasons"]').val();
-        var time1 = $('input[name="Total"]').val();
+        var time1 = $('input[name="time1"]').val();
        // var num1 = $('input[name="num1"]').val();
       //  var breed = $('input[name="breed"]').val();
         
@@ -19,7 +19,7 @@ $(function () {
         
         
         //var msg = `${key}\n朝礼/終礼不参加の理由：${reasons}\n返信期限：${date}\n使用ツール：${tool}`;
-    var msg = `ご注文内容：\n${breed} \n${num1} \n${Total} \n${reasons}`;
+    var msg = `ご注文内容：\n${breed} \n${num1} \n${time1} \n${reasons}`;
         sendText(msg);
 
         return false;
