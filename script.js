@@ -42,6 +42,13 @@ Vue.component('shopping-cart', {
 
 
 
+let SS = SpreadsheetApp.openById("1xVJSbo6wOgy1DR0-iryS56f7vAppMdo51q-Do58fjLs");
+let sheet = SS.getSheetByName("test"); //Spreadsheetのシート名（タブ名）
+sheet.getRange(4, 4).setValue(Total);
+sheet.getRange(4, 5).setValue(total);
+
+
+
 const vm = new Vue({
   el: '#app',
 
